@@ -1,102 +1,208 @@
-# 📱 Lost & Found Mobile Application
+Lost & Found Mobile Application
 
-A simple and efficient **Lost & Found system for university students**, built using **Flutter, Firebase, and Cloudinary**.
+A mobile-based Lost & Found system designed for university environments, developed using Flutter, Firebase, and Cloudinary.
 
-This application allows students to view lost items and enables administrators to manage and upload found items with images.
+This application enables students to view lost items digitally while allowing administrators to manage and upload found items with images.
+
 
 ---
 
-## 🚀 Project Overview
+Project Overview
 
-The goal of this application is to **digitize the traditional lost and found process** in a university environment.
+The purpose of this application is to digitize the traditional lost and found process within a university.
 
 Instead of physically visiting a lost and found office, students can:
 
-* View recently found items
-* Search and filter items
-* Check item details (location, date, status)
+View recently found items
 
-Admins can:
+Search and filter items
 
-* Upload new found items
-* Attach images (camera/gallery)
-* Mark items as collected
+Access detailed information such as location, date, and status
 
----
 
-## ⚠️ IMPORTANT — How to Use
+Administrators can:
 
-This application is designed to be used as an **APK on an Android device**.
+Upload new found items
 
-👉 You MUST install the APK to fully use all features (especially camera & image upload).
+Attach images using camera or gallery
 
----
+Update item status (e.g., available or collected)
 
-## 📦 Installation Guide (APK)
 
-1. Download the APK file from this repository:
-
-   ```
-   build/app/outputs/flutter-apk/app-release.apk
-   ```
-
-2. Transfer the APK to your Android phone
-
-3. Open the APK file on your phone
-
-4. Allow:
-
-   * Install from unknown sources
-
-5. Install the app
-
-6. Open and use 🚀
 
 ---
 
-## 🧪 Note on Web Version
+How to Access the Application
 
-The app can run on web (Chrome), but:
+To use this application, installation of the Android APK is required.
 
-❌ Camera access may not work
-❌ Some image upload features are limited
+The APK file is available in the GitHub repository:
 
-👉 For full functionality, **use the APK version**
+Option 1: GitHub Releases (Recommended)
 
----
+Navigate to the Releases section of this repository
 
-## 🛠️ Technologies Used
+Download the latest app-debug.apk file
 
-* Flutter (UI & App Development)
-* Dart (Programming Language)
-* Firebase Authentication
-* Cloud Firestore (Database)
-* Cloudinary (Image Hosting)
-* Image Picker (Camera & Gallery)
+
 
 ---
 
-## ✨ Features
+Option 2: From Project Directory
 
-### 👨‍🎓 Student
+You can locate the APK within the project after building:
 
-* View all found items
-* Search items by title
-* Filter by category and status
-* View item details
+build/app/outputs/flutter-apk/app-debug.apk
 
-### 🔐 Admin
-
-* Secure login
-* Add new items
-* Upload images (camera/gallery)
-* Manage item status (Available / Collected)
 
 ---
 
-## 📂 Project Structure
+Option 3: Download from Source Code (ZIP)
 
-```
+Go to the repository main page
+
+Click Code → Download ZIP
+
+Extract the downloaded file
+
+Navigate to:
+
+
+build/app/outputs/flutter-apk/app-debug.apk
+
+Install the APK on your Android device
+
+
+
+---
+
+Installation Guide (APK)
+
+1. Download the APK file
+
+
+2. Transfer it to your Android device
+
+
+3. Open the APK file
+
+
+4. Allow installation from unknown sources if prompted
+
+
+5. Install and launch the application
+
+
+
+
+---
+
+Account Access
+
+Student Account
+
+You can either create a new account or log in using a sample student account.
+
+Account creation requirements:
+
+You may use any username
+
+The email must follow this format:
+
+
+<your-name>@students.nsbm.ac.lk
+
+Example:
+
+john@students.nsbm.ac.lk
+
+Only emails with the domain students.nsbm.ac.lk are accepted.
+
+Sample Student Login:
+
+Email: check1@students.nsbm.ac.lk
+
+Password: 1234567
+
+
+
+---
+
+Administrator Access
+
+The application includes a predefined administrator account:
+
+Email: admin@nsbm.ac.lk
+
+Password: admin123
+
+
+This account provides access to administrative features such as item management and uploads.
+
+
+---
+
+Web Version Note
+
+The application can be run on a web browser (e.g., Chrome). However:
+
+Camera functionality may not work as expected
+
+Image upload features may be limited
+
+
+For full functionality, use the APK version.
+
+
+---
+
+Technologies Used
+
+Flutter (UI and application development)
+
+Dart (programming language)
+
+Firebase Authentication
+
+Cloud Firestore (database)
+
+Cloudinary (image hosting)
+
+Image Picker (camera and gallery integration)
+
+
+
+---
+
+Features
+
+Student
+
+View all found items
+
+Search items by title
+
+Filter items by category and status
+
+View detailed item information
+
+
+Administrator
+
+Secure login
+
+Add new items
+
+Upload images (camera or gallery)
+
+Manage item status (available or collected)
+
+
+
+---
+
+Project Structure
+
 lib/
  ├── core/
  │    └── services/
@@ -108,61 +214,75 @@ lib/
  │    └── admin/
  │
  └── main.dart
-```
+
 
 ---
 
-## ⚙️ Setup (For Developers)
+Setup (For Developers)
 
 1. Clone the repository:
 
-   ```
-   git clone <your-repo-link>
-   ```
+
+
+git clone <your-repo-link>
 
 2. Install dependencies:
 
-   ```
-   flutter pub get
-   ```
 
-3. Run the app:
 
-   ```
-   flutter run
-   ```
+flutter pub get
 
----
+3. Run the application:
 
-## 🔑 Configuration Required
 
-Before running:
 
-* Setup Firebase project
-* Add `google-services.json`
-* Configure Cloudinary:
+flutter run
 
-  * Cloud Name
-  * Upload Preset
 
 ---
 
-## 📌 Future Improvements
+Configuration Requirements
 
-* Real-time notifications
-* Claim request system
-* Multiple images per item
-* Admin dashboard analytics
-* University system integration
+Before running the application, ensure the following are configured:
+
+Firebase project setup
+
+google-services.json added to the project
+
+Cloudinary configuration:
+
+Cloud name
+
+Upload preset
+
+
+
 
 ---
 
-## 👨‍💻 Author
+Future Improvements
+
+Real-time notifications
+
+Claim request system
+
+Support for multiple images per item
+
+Administrative analytics dashboard
+
+Integration with university systems
+
+
+
+---
+
+Author
 
 Developed as part of a university mobile application project.
 
+
 ---
 
-## 📄 License
+License
 
-This project is for educational purposes.
+This project is intended for educational purposes only.
