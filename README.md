@@ -1,208 +1,170 @@
-Lost & Found Mobile Application
-
-A mobile-based Lost & Found system designed for university environments, developed using Flutter, Firebase, and Cloudinary.
-
-This application enables students to view lost items digitally while allowing administrators to manage and upload found items with images.
-
+Here’s your **clean, professional, GitHub-ready README** — structured properly, improved wording, and with strong emphasis on APK (your main requirement). No emojis, clean formatting, and better flow 👇
 
 ---
 
-Project Overview
+# **Lost & Found Mobile Application**
+
+A mobile-based Lost & Found system designed for university environments, developed using **Flutter**, **Firebase**, and **Cloudinary**.
+
+This application allows students to view lost items digitally, while administrators manage and upload found items with images.
+
+---
+
+## **Project Overview**
 
 The purpose of this application is to digitize the traditional lost and found process within a university.
 
 Instead of physically visiting a lost and found office, students can:
 
-View recently found items
-
-Search and filter items
-
-Access detailed information such as location, date, and status
-
+* View recently found items
+* Search and filter items
+* Access detailed information (location, date, status)
 
 Administrators can:
 
-Upload new found items
-
-Attach images using camera or gallery
-
-Update item status (e.g., available or collected)
-
-
+* Upload new found items
+* Attach images using camera or gallery
+* Update item status (Available / Collected)
 
 ---
 
-How to Access the Application
+## **How to Access the Application (IMPORTANT)**
 
-To use this application, installation of the Android APK is required.
+To use this application, you must install the **Android APK**.
 
-The APK file is available in the GitHub repository:
+### **Option 1: GitHub Releases (Recommended)**
 
-Option 1: GitHub Releases (Recommended)
+1. Go to the repository
+2. Navigate to the **Releases** section
+3. Download the latest file:
 
-Navigate to the Releases section of this repository
-
-Download the latest app-debug.apk file
-
-
+```
+app-debug.apk
+```
 
 ---
 
-Option 2: From Project Directory
+### **Option 2: From Project Directory**
 
-You can locate the APK within the project after building:
+After building the project, locate the APK at:
 
+```
 build/app/outputs/flutter-apk/app-debug.apk
-
+```
 
 ---
 
-Option 3: Download from Source Code (ZIP)
+### **Option 3: Download from Source Code (ZIP)**
 
-Go to the repository main page
+1. Go to the repository main page
+2. Click **Code → Download ZIP**
+3. Extract the ZIP file
+4. Navigate to:
 
-Click Code → Download ZIP
-
-Extract the downloaded file
-
-Navigate to:
-
-
+```
 build/app/outputs/flutter-apk/app-debug.apk
+```
 
-Install the APK on your Android device
-
-
+5. Install the APK on your Android device
 
 ---
 
-Installation Guide (APK)
+## **APK Installation Guide**
 
 1. Download the APK file
-
-
 2. Transfer it to your Android device
-
-
 3. Open the APK file
-
-
-4. Allow installation from unknown sources if prompted
-
-
+4. Allow installation from unknown sources (if prompted)
 5. Install and launch the application
 
-
-
-
 ---
 
-Account Access
+## **Account Access**
 
-Student Account
+### **Student Account**
 
-You can either create a new account or log in using a sample student account.
+You can either create a new account or use a sample account.
 
-Account creation requirements:
+**Account Requirements:**
 
-You may use any username
+* Any username can be used
+* Email must follow this format:
 
-The email must follow this format:
-
-
+```
 <your-name>@students.nsbm.ac.lk
+```
 
-Example:
+**Example:**
 
-john@students.nsbm.ac.lk
+```
+xxxx@students.nsbm.ac.lk
+```
 
-Only emails with the domain students.nsbm.ac.lk are accepted.
+Only emails with the domain `students.nsbm.ac.lk` are accepted.
 
-Sample Student Login:
+**Sample Login:**
 
-Email: check1@students.nsbm.ac.lk
-
+```
+Email: check1@students.nsbm.ac.lk  
 Password: 1234567
-
-
+```
 
 ---
 
-Administrator Access
+### **Administrator Account**
 
-The application includes a predefined administrator account:
-
-Email: admin@nsbm.ac.lk
-
+```
+Email: admin@nsbm.ac.lk  
 Password: admin123
+```
 
-
-This account provides access to administrative features such as item management and uploads.
-
-
----
-
-Web Version Note
-
-The application can be run on a web browser (e.g., Chrome). However:
-
-Camera functionality may not work as expected
-
-Image upload features may be limited
-
-
-For full functionality, use the APK version.
-
+This account provides full administrative access, including item management and uploads.
 
 ---
 
-Technologies Used
+## **Web Version Note**
 
-Flutter (UI and application development)
+The application can run on a web browser (e.g., Chrome), but:
 
-Dart (programming language)
+* Camera functionality may not work properly
+* Image uploads may be limited
 
-Firebase Authentication
-
-Cloud Firestore (database)
-
-Cloudinary (image hosting)
-
-Image Picker (camera and gallery integration)
-
-
+For full functionality, use the **APK version**.
 
 ---
 
-Features
+## **Technologies Used**
 
-Student
-
-View all found items
-
-Search items by title
-
-Filter items by category and status
-
-View detailed item information
-
-
-Administrator
-
-Secure login
-
-Add new items
-
-Upload images (camera or gallery)
-
-Manage item status (available or collected)
-
-
+* Flutter (UI & App Development)
+* Dart (Programming Language)
+* Firebase Authentication
+* Cloud Firestore (Database)
+* Cloudinary (Image Hosting)
+* Image Picker (Camera & Gallery Integration)
 
 ---
 
-Project Structure
+## **Features**
 
+### **Student**
+
+* View all found items
+* Search items by title
+* Filter by category and status
+* View detailed item information
+
+### **Administrator**
+
+* Secure login
+* Add new items
+* Upload images (camera/gallery)
+* Manage item status
+
+---
+
+## **Project Structure**
+
+```
 lib/
  ├── core/
  │    └── services/
@@ -214,75 +176,63 @@ lib/
  │    └── admin/
  │
  └── main.dart
-
+```
 
 ---
 
-Setup (For Developers)
+## **Setup (For Developers)**
 
-1. Clone the repository:
+### 1. Clone the Repository
 
-
-
+```
 git clone <your-repo-link>
+```
 
-2. Install dependencies:
+### 2. Install Dependencies
 
-
-
+```
 flutter pub get
+```
 
-3. Run the application:
+### 3. Run the Application
 
-
-
+```
 flutter run
-
-
----
-
-Configuration Requirements
-
-Before running the application, ensure the following are configured:
-
-Firebase project setup
-
-google-services.json added to the project
-
-Cloudinary configuration:
-
-Cloud name
-
-Upload preset
-
-
-
+```
 
 ---
 
-Future Improvements
+## **Configuration Requirements**
 
-Real-time notifications
+Before running the application, ensure:
 
-Claim request system
+* Firebase project is configured
+* `google-services.json` is added
+* Cloudinary is configured with:
 
-Support for multiple images per item
-
-Administrative analytics dashboard
-
-Integration with university systems
-
-
+  * Cloud Name
+  * Upload Preset
 
 ---
 
-Author
+## **Future Improvements**
+
+* Real-time notifications
+* Claim request system
+* Multiple images per item
+* Admin analytics dashboard
+* Integration with university systems
+
+---
+
+## **Author**
 
 Developed as part of a university mobile application project.
 
-
 ---
 
-License
+## **License**
 
 This project is intended for educational purposes only.
+
+
