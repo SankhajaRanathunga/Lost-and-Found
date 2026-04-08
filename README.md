@@ -1,6 +1,4 @@
-Here’s your **clean, professional, GitHub-ready README** — structured properly, improved wording, and with strong emphasis on APK (your main requirement). No emojis, clean formatting, and better flow 👇
 
----
 
 # **Lost & Found Mobile Application**
 
